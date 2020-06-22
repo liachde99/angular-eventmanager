@@ -1,0 +1,79 @@
+.event-container{
+  width: 64vw;
+  min-width: 640px;
+  margin: auto;
+  padding: 1vh 1vw;
+
+  display: grid;
+  grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end];
+  column-gap: 1vw;
+  row-gap: 1vh;
+
+  .event-card {
+    height: 150px;
+    min-width: 200px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-areas:
+      'name name name'
+      'beschreibung beschreibung info'
+      'beschreibung beschreibung info';
+
+    [class^="event-card-"]{
+      padding: 2px;
+    }
+    .event-card-name{
+      grid-area: name;
+      border-bottom: 1px solid #c4c4c4;
+      text-align: center;
+    }
+    .event-card-beschreibung{
+      grid-area: beschreibung;
+    }
+    .event-card-info{
+      grid-area: info;
+      border-left: 1px solid #c4c4c4;
+    }
+
+    &:hover{
+      border-color: #393;
+      box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+      outline: none;
+    }
+  }
+}
+
+.add-btn{
+  position: fixed;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #2D44C4;
+  background-image: url(../../../assets/icons8-plus-100.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  right: 5vw;
+  bottom: 5vh;
+  cursor: pointer;
+  border: none;
+}
+
+@media only screen and (max-width: 650px) {
+  .event-container{
+    width: 43vw;
+    min-width: 430px;
+    grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .event-container{
+    width: 100vw;
+    min-width: 250px;
+    grid-template-columns: [col1-start] 1fr [col1-end];
+  }
+}

@@ -1,0 +1,15 @@
+.welcome{
+  margin: 20vh auto;
+  width: fit-content;
+  padding: 5vh;
+
+  a{
+    font-size: 6em;
+    font-family: 'Odibee Sans', cursive;
+
+    &.highlight{
+      font-size: 8em !important;
+      color: #76A885;
+    }
+  }
+}

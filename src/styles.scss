@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+app-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.filler{
+  height: max(20vh, 65px);
+}
+
+.aktive-link-menu{
+  color: #76A885 !important;
+}
+
+body{
+  background-color: #E9E9E9;
+}
+
+.three-d{
+    //3D-Look
+    background-color: #eeeeee;
+
+    border-width: 1px;
+
+    border-style: solid;
+
+    border-bottom-color: #aaa;
+
+    border-right-color: #aaa;
+
+    border-top-color: #ddd;
+
+    border-left-color: #ddd;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+
+.three-d-allcorners{
+  background-color: #eeeeee;
+
+  border-width: 1px;
+
+  border-style: solid;
+
+  border-bottom-color: #aaa;
+
+  border-right-color: #aaa;
+
+  border-top-color: #ddd;
+
+  border-left-color: #ddd;
+
+  border-radius: 10px;
+
+  -moz-border-radius: 10px;
+
+  -webkit-border-radius: 10px;
+}

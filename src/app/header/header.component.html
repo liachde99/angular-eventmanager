@@ -1,0 +1,23 @@
+<div class="outer-con">
+  <div class="menu">
+    <ul>
+      <li>
+        <a routerLink="home" routerLinkActive="aktive-link-menu">Home</a>
+      </li>
+      <li>
+        <a routerLink="angular" routerLinkActive="aktive-link-menu">Angular</a>
+      </li>
+      <li>
+        <a routerLink="events" routerLinkActive="aktive-link-menu">Events</a>
+      </li>
+      <li>
+        <button *ngIf="!loginService.isUserLoggedIn()" class="login-btn" [routerLink]="'login'">
+          <a>Login</a>
+        </button>
+        <button *ngIf="loginService.isUserLoggedIn()" class="login-btn" [routerLink]="'logout'">
+          <a>Logout</a>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

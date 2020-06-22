@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<div class="form-container three-d-allcorners">
+  <form action="/examples/actions/confirmation.php" method="post">
+    <div class="form-group">
+      <label for="inputName">Name</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Name" name="name" [(ngModel)]="event.name" required>
+    </div>
+    <div class="form-group">
+      <label for="inputOrt">Ort</label>
+      <input type="text" class="form-control" id="inputOrt" placeholder="Ort" name="ort" [(ngModel)]="event.ort" required>
+    </div>
+    <div class="form-group">
+      <label for="inputOpen">Open</label>
+      <select class="form-control" id="inputOpen" name="open" [(ngModel)]="event.open">
+        <option value="true" selected>Öffentlich</option>
+        <option value="false">Privat</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="inputBeschreibung">Beschreibung</label>
+      <textarea class="form-control" id="inputBeschreibung" placeholder="Beschreibung" name="beschreibung" [(ngModel)]="event.beschreibung"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="submitEvent()">Submit</button>
+  </form>
+</div>

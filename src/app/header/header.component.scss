@@ -1,0 +1,37 @@
+.outer-con{
+  width: 100vw;
+  height: 20vh;
+  min-height: 65px;
+  background-image: url(../../assets/people-in-concert.jpg);
+  background-repeat: no-repeat;
+
+  .menu{
+    float: right;
+    height: 50px;
+    margin: 20px;
+
+    ul{
+      list-style-type: none;
+
+      li{
+        display: inline-block;
+        padding: 0 5px;
+        font-size: 1.2em;
+
+        a{
+          color: #E6FFED;
+          text-transform: uppercase;
+        }
+
+        .login-btn{
+          background-color: #2D44C4;
+          box-shadow: none;
+          border: none;
+          border-radius: 5px;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
